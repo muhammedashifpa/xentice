@@ -1,4 +1,4 @@
-// /* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import * as HIcons from '@heroicons/react/24/outline'
 export interface IconLinkInterface {

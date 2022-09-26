@@ -1,7 +1,6 @@
-import { Fragment, useState } from 'react'
-import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
-import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import { classNames } from '../../../utils/functions'
+import {  useState } from 'react'
+import { Bars3Icon }from '@heroicons/react/24/outline'
+
 import RightNav from './components/RightNav'
 import Logo from './components/Logo'
 import SideBar from './components/sidebar/SideBar'

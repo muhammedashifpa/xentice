@@ -1,7 +1,3 @@
-import { Fragment } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
-import { XMarkIcon } from '@heroicons/react/24/outline'
-import Logo from '../Logo'
 import SideBarWrapper from './SideBarWrapper'
 import SideBarHeader from './SideBarHeader'
 import { IconLinkInterface } from '../utils/IconLink'
