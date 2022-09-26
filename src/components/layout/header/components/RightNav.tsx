@@ -4,7 +4,7 @@ type Props = {}
 
 const RightNav = (props: Props) => {
   return (
-    <div className="ml-auto flex items-center hidden md:flex">
+    <div className="ml-auto items-center hidden md:flex">
         {RightNavData.map(item=>(
             <IconLink
                 key={item.key}

@@ -14,7 +14,7 @@ const Header = (props: Props) => {
         open={open}
         setOpen={setOpen}
     />
-    <header className="relative bg-white">
+    <header className=" bg-white fixed top-0 z-40 left-0 right-0">
       <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="border-b border-gray-200">
           <div className="flex h-16 items-center">

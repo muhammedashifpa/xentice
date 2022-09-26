@@ -9,7 +9,11 @@ module.exports = {
         'dark-blue': '#012b72',
       },
       minWidth: {
-        '120': '120px'
+        '120': '120px',
+        '320': '220px'
+      },
+      backgroundImage: {
+        'hero-image': "url('/img/hero-pattern.svg')",
       }
     },
   },
