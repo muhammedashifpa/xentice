@@ -12,3 +12,9 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
+.slick-list {
+    overflow : visible;
+    gap:1vw;
+    transform: none !important;
+}

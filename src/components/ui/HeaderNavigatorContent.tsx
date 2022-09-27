@@ -18,7 +18,7 @@ const HeaderNavigatorContent = ({data, fontClass,width}: Props) => {
   return (
     <ul className={classNames('mx-auto  py-5 px-4 sm:px-6 lg:px-4 flex items-center justify-between',width?width:'max-w-6xl')}>
         {data.map(item=>(
-            <li className='transform transition duration-300 hover:scale-110 min-w-120'>
+            <li key={item.key} className='transform transition duration-300 hover:scale-110 min-w-120'>
                 <a href={item.link}>
                     <div className='px-3'>
                         <span className="sr-only">xentice</span>

@@ -74,12 +74,12 @@ const data: NavigatorContentInterface[] = [
         name:'Xentic Mart',
         image:'/services_images/xtencis_mart.png',
         link:'string',
-        key:9,
+        key:10,
     },
     {
         name:'Eco Living',
         image:'/services_images/eco_living.png',
         link:'string',
-        key:9,
+        key:11,
     },
 ]

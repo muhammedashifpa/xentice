@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import * as HIcons from '@heroicons/react/24/outline'
+import { classNames } from '../../../../../utils/functions'
 export interface IconLinkInterface {
     key?:number
     link?:string
@@ -8,18 +9,19 @@ export interface IconLinkInterface {
     name:string
     screenRead?:string
     doTask?:()=>void
+    className?:string
 }
 
-const IconLink = ({icon, name, screenRead, doTask}: IconLinkInterface) => {
+const IconLink = ({icon, name, screenRead, doTask, className}: IconLinkInterface) => {
     const {...icons} = HIcons
      // @ts-ignore
     const TheIcon: JSX.Element = icons[icon]
   return (
-    <div className="ml-4 flow-root lg:ml-6">
+    <div className={classNames("ml-4 flow-root lg:ml-6", className?className:'')}>
         <a href='#' onClick={doTask&&doTask}className="group -m-2 flex items-center p-2">
         {/* @ts-ignore */}
         <TheIcon
-            className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
+            className={classNames("h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500")}
             aria-hidden="true"
         />
         <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">{name}</span>
