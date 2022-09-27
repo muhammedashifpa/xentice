@@ -15,7 +15,7 @@ function App() {
         <Hero/>
         <ServiceHeader/>
         <ProductListing/>
-        {/* <FetchComponents/> */}
+        <FetchComponents/>
       </Layout>
     </div>
   );

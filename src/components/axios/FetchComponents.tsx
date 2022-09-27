@@ -17,7 +17,7 @@ const FetchComponents = (props: Props) => {
         .then(
             res=>{
                 // console.log(filterDatas(res))
-                // console.log(res)
+                console.log(res)
                 // const jsonList = JSON.parse(res)
                 // console.log(jsonList)
                 // const obj = res[0]

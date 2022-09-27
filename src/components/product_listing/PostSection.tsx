@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { fetchDataasyncFunction, fetchDataInterface, filterDatas, FinalDatainterface } from './productListingFunction'
-import PostCategory from './product_section/PostCategory'
-import ProductSection from './product_section/PostCategory'
+import { fetchDataasyncFunction, fetchDataInterface, filterDatas, FinalDatainterface } from './postListingFunction'
+import PostCategoriser from './product_section/PostCatogory/PostCategoriser'
+import PostCategory from './product_section/PostCatogory/PostCategory'
+import ProductSection from './product_section/PostCatogory/PostCategory'
 
 type PostSectionInterface = {
   fetchData: FinalDatainterface[]
@@ -33,14 +34,13 @@ const PostSection = () => {
     }
     )
   },[])
-  console.log(data)
   return (
-    <section className=' py-5 px-4 sm:px-6 lg:py-16'>
+    <section className='px-4 sm:px-6'>
         {data.status === 'loading'&& 'loaing' }
         {data.status === 'faild'&& 'faild**********' }
         {data.status === 'success'&& 
-          // <PostCategory data={}/>
-        }
+          <PostCategoriser  data={data.fetchData}/>
+         }
     </section>
   )
 }

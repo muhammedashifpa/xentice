@@ -78,7 +78,7 @@ const Navigators: NavigatorInterface =
         name:'Near Me'
       },
       { 
-        key:1,
+        key:7,
         icon:'TagIcon',
         link:'',
         name:'string'
@@ -105,6 +105,7 @@ const Navigators: NavigatorInterface =
       icon:'ArrowRightOnRectangleIcon',
       name:'Login/SignUp',
       screenRead:'Login or signup',
-      key:3
+      link:''
+      // key:3
   },
   }

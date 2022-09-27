@@ -26,10 +26,12 @@ const SideBarBody = ({data, login, pages}: NavigatorInterface) => {
     {/* login */}
     <div className="space-y-6 border-t border-gray-200 pb-6 px-4">
         <div className="mt-6 flex flex-col space-y-6">
+        <a href={login.link} className="-m-2 block p-2 text-gray-500">
             <IconLink
                 icon={login.icon}
                 name={login.name}
             />
+        </a>
         </div>
       </div>
     {/* Pages */}

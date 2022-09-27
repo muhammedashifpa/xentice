@@ -12,13 +12,13 @@ export interface IconLinkInterface {
     className?:string
 }
 
-const IconLink = ({icon, name, screenRead, doTask, className}: IconLinkInterface) => {
+const IconLink = ({icon, name, screenRead, doTask, className,link}: IconLinkInterface) => {
     const {...icons} = HIcons
      // @ts-ignore
     const TheIcon: JSX.Element = icons[icon]
   return (
     <div className={classNames("ml-4 flow-root lg:ml-6", className?className:'')}>
-        <a href='#' onClick={doTask&&doTask}className="group -m-2 flex items-center p-2">
+        <a href={link?link:'#'} onClick={doTask&&doTask} className="group -m-2 flex items-center p-2">
         {/* @ts-ignore */}
         <TheIcon
             className={classNames("h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500")}

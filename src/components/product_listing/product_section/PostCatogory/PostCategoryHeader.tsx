@@ -1,15 +1,17 @@
 import React from 'react'
-import IconLink from '../../layout/header/components/utils/IconLink'
+import IconLink from '../../../layout/header/components/utils/IconLink'
 
-type Props = {}
+type Props = {
+  name:string
+}
 
-const PostCategoryHeader = (props: Props) => {
+const PostCategoryHeader = ({name}: Props) => {
   return (
     <div className='flex justify-between items-center p-2'>
       {/* left */}
       <div>
-        <span className="sr-only">xentice</span>
-        <h4 className='text-2xl font-medium'>Commercial Shop</h4>
+        <span className="sr-only">{name}</span>
+        <h4 className='text-2xl font-medium'>{name}</h4>
       </div>
       {/* right */}
       <div>

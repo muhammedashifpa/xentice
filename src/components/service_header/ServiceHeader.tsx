@@ -6,7 +6,7 @@ type Props = {}
 
 const ServiceHeader = (props: Props) => {
   return (
-    <HeaderNavigator data={data} className='py-8' width='max-w-8xl'/>
+    <HeaderNavigator data={data} className='py-6' width='max-w-8xl'/>
   )
 }
 
