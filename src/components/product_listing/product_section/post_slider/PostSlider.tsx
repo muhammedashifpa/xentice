@@ -29,7 +29,6 @@ var settings = {
     speed: 700,
     slidesToShow: 4,
     slidesToScroll:2 ,
-    // focusOnSelect: true,
     responsive: [
         {
           breakpoint: 1024,

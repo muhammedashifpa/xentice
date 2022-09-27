@@ -10,7 +10,7 @@ const PostCard = ({data}: Props) => {
   const location = JSON.parse(data.location)
 
   return (
-    <div className='border-8 border-transparent rounded-xl '>
+    <div className='border-8 border-transparent rounded-xl transform transition duration-300 hover:scale-105'>
       <div className='border border-slate-300 overflow-hidden rounded-md'>
           <a href='#'>
             <img

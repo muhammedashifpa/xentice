@@ -12,13 +12,14 @@ const SideBarBody = ({data, login, pages}: NavigatorInterface) => {
         <ul className="mt-6 flex flex-col space-y-6">
             {data.map((item) => (
                 <li key={item.key} className="flow-root">
-                    <a href={item.link} className="-m-2 block p-2 text-gray-500">
+                    {/* <a href={item.link} className="-m-2 block p-2 text-gray-500"> */}
                     <IconLink
                         icon={item.icon}
                         name={item.name}
                         screenRead={item.screenRead&&item.screenRead}
+                        link='#'
                     />
-                    </a>
+                    {/* </a> */}
                 </li>
             ))}
         </ul>
@@ -26,12 +27,12 @@ const SideBarBody = ({data, login, pages}: NavigatorInterface) => {
     {/* login */}
     <div className="space-y-6 border-t border-gray-200 pb-6 px-4">
         <div className="mt-6 flex flex-col space-y-6">
-        <a href={login.link} className="-m-2 block p-2 text-gray-500">
+        {/* <a href={login.link} className="-m-2 block p-2 text-gray-500"> */}
             <IconLink
                 icon={login.icon}
                 name={login.name}
             />
-        </a>
+        {/* </a> */}
         </div>
       </div>
     {/* Pages */}
@@ -39,7 +40,7 @@ const SideBarBody = ({data, login, pages}: NavigatorInterface) => {
         <ul className="mt-6 flex flex-col space-y-6">
             {pages.map((item) => (
                 <li key={item.key} className="flow-root ml-4">
-                    <a href={item.link} className="-m-2 block p-2 text-gray-500">
+                    <a href={item.link} className="-m-2 block p-2 text-gray-500 sm hover:text-black">
                     {item.name}
                     </a>
                 </li>
