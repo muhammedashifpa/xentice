@@ -1,20 +1,18 @@
 import React from 'react'
-import RealEstateContents, { RealEstateContentInterface } from './components/RealEstateContents'
+import HeaderNavigator from '../ui/HeaderNavigator'
+import { NavigatorContentInterface } from '../ui/HeaderNavigatorContent'
 
 type Props = {}
 
 const RealEstateHeader = (props: Props) => {
   return (
-    <div className='relative bg-dark-blue scroll-pl-6 snap-x overflow-scroll no-scrollbar '>
-        <RealEstateContents data={data}/>
-    </div>
+    <HeaderNavigator className='bg-dark-blue' fontClass=' text-white' data={data}/>
   )
 }
 
 export default RealEstateHeader
 
-
-const data: RealEstateContentInterface[] = [
+const data: NavigatorContentInterface[] = [
     {
         name:'Commercial Shop',
         image:'/real_estate_images/commercial_shop.png',

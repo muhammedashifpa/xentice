@@ -13,7 +13,7 @@ module.exports = {
         '320': '220px'
       },
       backgroundImage: {
-        'hero-image': "url('/img/hero-pattern.svg')",
+        'hero-image': "url('/public/hero_img.jpg')",
       }
     },
   },
