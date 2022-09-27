@@ -1,6 +1,5 @@
 import React from 'react'
 import {HeartIcon,MapPinIcon} from '@heroicons/react/24/outline'
-import IconLink from '../../../layout/header/components/utils/IconLink'
 import { fetchDataInterface } from '../../postListingFunction'
 type Props = {
   data:fetchDataInterface

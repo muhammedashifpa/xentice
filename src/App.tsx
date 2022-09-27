@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import FetchComponents from './components/axios/FetchComponents';
 import Hero from './components/hero/Hero';
 import Layout from './components/layout/Layout';
 import ProductListing from './components/product_listing/PostSection';
@@ -15,7 +14,6 @@ function App() {
         <Hero/>
         <ServiceHeader/>
         <ProductListing/>
-        <FetchComponents/>
       </Layout>
     </div>
   );

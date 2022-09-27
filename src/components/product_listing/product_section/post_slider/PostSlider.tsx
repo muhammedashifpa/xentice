@@ -3,15 +3,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import PostCard from './PostCard';
-import { FinalDatainterface } from '../../postListingFunction';
-import { fetchDataInterface } from '../../../axios/FetchComponents';
+import { fetchDataInterface } from '../../postListingFunction';
 
 type Props = {
   data:fetchDataInterface[]
 }
 
 const PostSlider = ({data}: Props) => {
-  // data.map(item=>console.log(JSON.parse(item.details)))
   return (
     <Slider {...settings} className=''>
         {

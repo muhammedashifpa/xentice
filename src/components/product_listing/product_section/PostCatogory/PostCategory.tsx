@@ -1,7 +1,7 @@
 import React from 'react'
-import { fetchDataInterface, FinalDatainterface } from '../../postListingFunction'
 import PostCategoryHeader from './PostCategoryHeader'
 import PostSlider from '../post_slider/PostSlider'
+import { fetchDataInterface } from '../../postListingFunction'
 
 type Props = {
   data:fetchDataInterface[]
